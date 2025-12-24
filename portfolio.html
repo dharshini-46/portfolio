@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f7f6;
+        }
+
+        /* Navigation */
+        nav {
+            background: #2c3e50;
+            color: #fff;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        /* Hero Section */
+        header {
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: #ffffff;
+            padding: 0 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            color: #2c3e50;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            margin-top: 10px;
+        }
+
+        /* Container for Sections */
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 20px;
+        }
+
+        section {
+            margin-bottom: 4rem;
+        }
+
+        h2 {
+            border-bottom: 3px solid #3498db;
+            display: inline-block;
+            margin-bottom: 25px;
+            padding-bottom: 5px;
+        }
+
+        /* Skills Styling */
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style: none;
+        }
+
+        .skill-badge {
+            background: #3498db;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        /* Grid for Projects */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .project-card h4 {
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #2c3e50;
+            color: white;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+            }
+            nav ul {
+                margin-top: 15px;
+            }
+            header h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo"><strong>Dharshini K</strong></div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Hi, I'm DHARSHINI K</h1>
+        <p>A passionate Developer & Designer</p>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a beginner developer learning the ropes of web creation. I love building things that are simple, functional, and beautiful. Currently, I am focusing on HTML, CSS, and JavaScript.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li class="skill-badge"><h4>Programming</h4>C,Python(Beginner)</li>
+                <li class="skill-badge"><h4>Frontend development</h4>HTML,CSS</li>
+                <li class="skill-badge"><h4>Fundamentals</h4>Data Structures (Learning)</li>
+                <li class="skill-badge"><h4>Tools</h4>Git,ChatGPT/Copilot,Figma,Canva</li>
+                <li class="skill-badge"><h4>UI/UX Design</h4></li>
+                <li class="skill-badge"><h4>Problem Solving</h4></li>
+                <li class="skill-badge"><h4>Logic Design</h4></li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h4>Stock Alert System</h4>
+                    <p>Designed a basic backend concept to monitor stock levels and trigger alerts.</p>
+                </div>
+                <div class="project-card">
+                    <h4>Rock Paper Scissors – Logic Design</h4>
+                    <p>Developed pseudocode and flowchart focusing on conditional logic and control flow.</p>
+                </div>
+                <div class="project-card">
+                    <h4>Online Portfolio</h4>
+                    <p>Designed a responsive personal online portfolio using modern web technologies.</p>
+                </div>
+                <div class="project-card">
+                    <h4>Music Player UI</h4>
+                    <p>Designed static and interactive Music player UI with HTML and CSS.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <p><strong>Email:</strong> <a href="mailto:dharshinik.it24@bitsathy.ac.in">dharshinik.it24@bitsathy.ac.in</a></p>
+            <p><b>LinkedIn:</b> <a href="#"> https://www.linkedin.com/in/dharshini-k-44b177358</a></p>
+            <p><strong>Phone:</strong> +91 90475 53654</p> </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 @ DHARSHINI K.</p>
+    </footer>
+
+</body>
+</html>
